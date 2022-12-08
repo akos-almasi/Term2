@@ -78,11 +78,11 @@ Then we wanted to investigate this observation further so we checked what is the
 ### Analytics on the Data Warehouse ###
 Our Data Warehouse consists of the following four dimensions and it has been created to provide one single table for both qualitative and quantitative parameters:
 
-<img src="https://user-images.githubusercontent.com/113236007/206479158-5c7a9dd0-5376-4134-93e9-5b5270571c1a.png" width="800" height="500">
+<img src="https://user-images.githubusercontent.com/113236007/206479158-5c7a9dd0-5376-4134-93e9-5b5270571c1a.png" width="700" height="400">
 
 We included the summary statistics table for the Data Warehouse:
 
-<img src="https://github.com/akos-almasi/Term2/blob/main/pics/statistics.png" width="800" height="500">
+<img src="https://github.com/akos-almasi/Term2/blob/main/pics/statistics.png" width="700" height="400">
 
 We took the log GDP for the following models:
 First we ran a linear regression on pay gap conditioned on gender ratio and log GDP. We found out that if the female to male gender ratio increases by 1% the pay gap also increases by 1.2 %. Ln GDP is not significant probably because we are checking EU countries. Our adjusted R-squared value is low, so we would advise to add additional explanatory variable(s) to the model. 
