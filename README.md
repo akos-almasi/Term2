@@ -76,8 +76,14 @@ We wanted to visualize the average pay gap in each country, so we grouped by the
 Then we wanted to investigate this observation further so we checked what is the mean gap in each field. The result shows us that there is a negative pay gap in construction, which means women tend to earn more in this field, probably it's because there aren't many women in this occupation or most of the time they are in higher average salary positions compared to men who work on construction sites.
 
 ### Analytics on the Data Warehouse ###
-We included the summary statistics table for the Data Warehouse
-![Summary-statistics](https://github.com/akos-almasi/Term2/blob/main/pics/statistics.png)
+Our Data Warehouse consists of the following four dimensions and it has been created to provide one single table for both qualitative and quantitative parameters:
+
+<img src="https://user-images.githubusercontent.com/113236007/206479158-5c7a9dd0-5376-4134-93e9-5b5270571c1a.png" width="800" height="500">
+
+We included the summary statistics table for the Data Warehouse:
+
+<img src="https://github.com/akos-almasi/Term2/blob/main/pics/statistics.png" width="800" height="500">
+
 We took the log GDP for the following models:
 First we ran a linear regression on pay gap conditioned on gender ratio and log GDP. We found out that if the female to male gender ratio increases by 1% the pay gap also increases by 1.2 %. Ln GDP is not significant probably because we are checking EU countries. Our adjusted R-squared value is low, so we would advise to add additional explanatory variable(s) to the model. 
 INCLUDE REGRESSION EXPLANATION GRAPH, VIz
@@ -87,7 +93,7 @@ Since we found a significant relationship between gender ratio and pay gap, we w
 <img src="https://github.com/akos-almasi/Term2/blob/main/pics/box_plot.png" width="800" height="500">
 
 
-#### Views: ####
+### Views: ###
 Additionally, we created two table views that demonstrate the average pay gap and gender ratio by countries and by different fields. The user can specify the country displayed, the order of the observations based on the two indicators.
 ![View-country](https://github.com/akos-almasi/Term2/blob/main/pics/view_country.png)
 
@@ -95,13 +101,6 @@ Additionally, we created two table views that demonstrate the average pay gap an
 ### Conclusion ###
 
 First, as we have seen from the visualizations for the Pay Gap table, in the fields where there are not that many women involved the gender pay gap can be even negative indicating that females in these professions earn more than men. However, in all other fields the pay gap is positive and this gap is the highest in the financial sector. Furthermore, in order to prove our finding we ran linear regression on pay gap conditioned on gender ratio and log(GDP) and constructed a box plot. The previously observed pattern is also found in the obtained results, the gender ration and pay gap are indeed positively correlated. 
-
-
-
-
-
-![Country (1)](https://user-images.githubusercontent.com/113236007/206479158-5c7a9dd0-5376-4134-93e9-5b5270571c1a.png)
-
 
 
 
