@@ -98,7 +98,7 @@ Additionally, we created two table views that demonstrate the average pay gap an
 
 <img src="https://github.com/akos-almasi/Term2/blob/main/pics/view_country.png" width="900" height="200">
 
-<img src="https://github.com/akos-almasi/Term2/blob/main/pics/view_field" width="900" height="200">
+<img src="https://github.com/akos-almasi/Term2/blob/main/pics/view_fields.png" width="900" height="200">
 
 
 ### Conclusion ###
