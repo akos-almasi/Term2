@@ -1,4 +1,8 @@
 # Term Project DE2
+Group members:
+ - Shahana Ayobi
+ - Alima Dzhanybaeva
+ - Akos Almasi
 
 
 ### Interpretation ###
