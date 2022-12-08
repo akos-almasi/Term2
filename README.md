@@ -35,11 +35,21 @@ Then we wanted to investigate this further so we checked what is the mean gap in
 
 ### Analytics on the Data Warehouse ###
 We included the summary statistics table for the Data Warehouse
+INCLUDE TABLE HERE
 
+We took the log GDP for the following models:
+First we ran a linear regression on pay gap conditioned on gender ratio and log GDP. We found out that if the female to male gender ratio increases by 1% the pay gap also increases by 1.2 %. Ln GDP is not significant probably because we are checking EU countries. Our adjusted R-squared value is low, so we would advise to add additional explanatory variable(s) to the model. 
+INCLUDE REGRESSION EXPLANATION GRAPH, VIz
+Since we found a significant relationship between gender ratio and pay gap, we wanted to visualize this correlation using a box plot. The plot confirms the regression result, the mean pay gap has an increasing trend meaning that as the proportion of women in the country rises the difference between average wage of men and women becomes bigger.  
+BOX PLOT
 
+Views:
+Additionally, we created two table views that demonstrate the average pay gap and gender ratio by countries and by different fields. The user can specify the country displayed, the order of the observations based on the two indicators.
+[TWO VIEWS]
 
+### Conclusion ###
 
-
+First, as we have seen from the visualizations for the Pay Gap table, in the fields where there are not that many women involved the gender pay gap can be even negative indicating that females in these professions earn more than men. However, in all other fields the pay gap is positive and this gap is the highest in the financial sector. Further, in order to prove our finding we ran linear regression on pay gap conditioned on gender ratio and log(GDP) and constructed a box plot. The previously observed pattern is also found in the obtained results, the gender ration and pay gap are indeed positively correlated. 
 
 
 
