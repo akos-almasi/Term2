@@ -82,11 +82,11 @@ First, as we have seen from the visualizations for the Pay Gap table, in the fie
 
 
 
+![Country (1)](https://user-images.githubusercontent.com/113236007/206479158-5c7a9dd0-5376-4134-93e9-5b5270571c1a.png)
 
 
 
 
-<img width="848" alt="Screenshot 2022-12-08 at 10 50 50" src="https://user-images.githubusercontent.com/113236007/206415570-bdbdeb3a-801d-4f10-b075-3c4571e25ecf.png">
 
 
 
