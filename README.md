@@ -70,7 +70,7 @@ Then we wanted to investigate this observation further so we checked what is the
 
 ### Analytics on the Data Warehouse ###
 We included the summary statistics table for the Data Warehouse
-INCLUDE TABLE HERE
+![summary-statistics](https://github.com/akos-almasi/Term2/blob/main/pics/statistics.png)
 
 We took the log GDP for the following models:
 First we ran a linear regression on pay gap conditioned on gender ratio and log GDP. We found out that if the female to male gender ratio increases by 1% the pay gap also increases by 1.2 %. Ln GDP is not significant probably because we are checking EU countries. Our adjusted R-squared value is low, so we would advise to add additional explanatory variable(s) to the model. 
