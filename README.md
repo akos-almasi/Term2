@@ -51,6 +51,9 @@ We added the Gender ratio table in order to investigate whether the connection w
 We obtained the Alpha-2 country codes from Kaggle in order to access the GDP data via postman. The csv file was then loaded to MySQL for further analysis in Knime.
 
 ## Knime Workflow ##
+
+https://github.com/akos-almasi/Term2/blob/main/pics/knime.png
+
 ### MongoDB ###
 In order to access NoSQL we added MongoDB Connector and to be able to read the pay gap table we added MongoDB Reader node. We then transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping only necessary columns, deleting missing values, etc. 
 ### SQL ###
