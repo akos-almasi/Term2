@@ -69,7 +69,7 @@ We configured the string manipulation node to access the GDP dataset, pasted the
 ### Analytics on MongoDB ###
 We wanted to visualize the average pay gap in each country, so we grouped by the country column. Based on the bar chart we can see that the highest gap is in Latvia (21.3%), and the lowest is in Romania(4.7%) .
 
-![MongoDB](https://github.com/akos-almasi/Term2/blob/main/pics/pay_gap_by_countries.png)
+<img src="https://github.com/akos-almasi/Term2/blob/main/pics/pay_gap_by_countries.png" width="800" height="500">
 
 Then we wanted to investigate this observation further so we checked what is the mean gap in each field. The result shows us that there is a negative pay gap in construction, which means women tend to earn more in this field, probably it's because there aren't many women in this occupation or most of the time they are in higher average salary positions compared to men who work on construction sites.
 
@@ -81,7 +81,9 @@ First we ran a linear regression on pay gap conditioned on gender ratio and log 
 INCLUDE REGRESSION EXPLANATION GRAPH, VIz
 
 Since we found a significant relationship between gender ratio and pay gap, we wanted to visualize this correlation using a box plot. The plot confirms the regression result, the mean pay gap has an increasing trend meaning that as the proportion of women in the country rises the difference between average wage of men and women becomes bigger.  
-![Box-plot](https://github.com/akos-almasi/Term2/blob/main/pics/box_plot.png)
+
+img src="https://github.com/akos-almasi/Term2/blob/main/pics/box_plot.png" width="800" height="500">
+
 
 Views:
 Additionally, we created two table views that demonstrate the average pay gap and gender ratio by countries and by different fields. The user can specify the country displayed, the order of the observations based on the two indicators.
