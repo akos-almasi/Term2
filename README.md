@@ -39,7 +39,8 @@ The first dataset that was used in the project contains information on the gende
 
 - GDP at Market Prices
 
-To look into the relationship between gender pay gap and GDP, Eurostat API was used to access GDP at market prices for European countries. The json data was acquired using data code (nama_10_gdp) in Eurostat Query Builder and filtered for year 2020, GDP at Market prices, and countries.  The data was then extracted using ![Postman](https://github.com/akos-almasi/Term2/blob/main/pics/Postman.png).
+To look into the relationship between gender pay gap and GDP, Eurostat API was used to access GDP at market prices for European countries. The json data was acquired using data code (nama_10_gdp) in Eurostat Query Builder and filtered for year 2020, GDP at Market prices, and countries.  The data was then extracted using Postman.
+![Postman](https://github.com/akos-almasi/Term2/blob/main/pics/Postman.png).
 
 #### Kaggle ####
 - Gender ratio
@@ -64,13 +65,16 @@ Using the joiner node, we first inner joined the gender gap and gender ratio tab
 ### Eurostat API ###
 We configured the string manipulation node to access the GDP dataset, pasted the country codes to acquire GDP information for each country. We then used the get request node to access the JSON URL for each country.  We used the JSON Path node to extract the GDP at market prices, country names, country codes, year, and unit. We then performed data cleaning by removing unnecessary columns. You can check the API workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/gdp_api.png)
 
-### Analytics on mongoDB ###
-We wanted to visualize the average pay gap in each country, so we grouped by the country column. Based on the bar chart we can see that the highest gap is in Latvia (21.3%), and the lowest is in Romania(4.7%) . 
+### Analytics on MongoDB ###
+We wanted to visualize the average pay gap in each country, so we grouped by the country column. Based on the bar chart we can see that the highest gap is in Latvia (21.3%), and the lowest is in Romania(4.7%) .
+
+![MongoDB](https://github.com/akos-almasi/Term2/blob/main/pics/pay_gap_by_countries.png)
+
 Then we wanted to investigate this observation further so we checked what is the mean gap in each field. The result shows us that there is a negative pay gap in construction, which means women tend to earn more in this field, probably it's because there aren't many women in this occupation or most of the time they are in higher average salary positions compared to men who work on construction sites.
 
 ### Analytics on the Data Warehouse ###
 We included the summary statistics table for the Data Warehouse
-![summary-statistics](https://github.com/akos-almasi/Term2/blob/main/pics/statistics.png)
+INCLUDE TABLE HERE
 
 We took the log GDP for the following models:
 First we ran a linear regression on pay gap conditioned on gender ratio and log GDP. We found out that if the female to male gender ratio increases by 1% the pay gap also increases by 1.2 %. Ln GDP is not significant probably because we are checking EU countries. Our adjusted R-squared value is low, so we would advise to add additional explanatory variable(s) to the model. 
@@ -81,9 +85,7 @@ Since we found a significant relationship between gender ratio and pay gap, we w
 
 Views:
 Additionally, we created two table views that demonstrate the average pay gap and gender ratio by countries and by different fields. The user can specify the country displayed, the order of the observations based on the two indicators.
-![View-country](https://github.com/akos-almasi/Term2/blob/main/pics/view_country.png)
-
-![View-field](https://github.com/akos-almasi/Term2/blob/main/pics/view_field.png)
+[TWO VIEWS]
 
 ### Conclusion ###
 
