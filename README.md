@@ -56,7 +56,8 @@ We obtained the Alpha-2 country codes from Kaggle in order to access the GDP dat
 
 You can check each element of the workflow in [here](https://github.com/akos-almasi/Term2/tree/main/pics).
 ### MongoDB ###
-In order to access NoSQL we added MongoDB Connector and to be able to read the pay gap table we added MongoDB Reader node. We then transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping only necessary columns, deleting missing values, etc. 
+In order to access NoSQL we added MongoDB Connector and to be able to read the pay gap table we added MongoDB Reader node. We then transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping only necessary columns, deleting missing values, etc.
+You can check the mongoDB workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/pay_gap.png).
 ### SQL ###
 We used mysql workbench to access the gender ratio and the country codes csv files, and we used the mysql connector node to import it to knime, and we configured the Query Reader for 2020.  
 ### Joiner ###
