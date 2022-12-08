@@ -21,7 +21,7 @@ Indicators considered
 
 ### Knime Workflow ###
 #### MongoDB ####
-In order to access NoSQL we added MongoDB Connector and to be able to read pay gap table we added MongoDb Reader node. We then transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping necessary columns, deleting missing values, etc. 
+In order to access NoSQL we added MongoDB Connector and to be able to read pay gap table we added MongoDB Reader node. We then transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping necessary columns, deleting missing values, etc. 
 #### SQL ####
 We used mysql workbench to access the gender ratio and the country codes csv files, and we used the mysql connector node to import it to knime, and we configured the Query Reader for 2020.  
 #### Joiner ####
