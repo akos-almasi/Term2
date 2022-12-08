@@ -7,8 +7,11 @@
 
 ### Data Sources ###
 Gender Pay Gap from Eurostat: https://ec.europa.eu/eurostat/databrowser/view/earn_gr_gpgr2$DV_593/default/table?lang=en
+
 GDP at Market Prices from Eurostat API: https://ec.europa.eu/eurostat/databrowser/view/tec00001/default/table?lang=en
+
 Gender Ratio from Kaggle: https://www.kaggle.com/datasets/programmerrdai/gender-ratio-inequality
+
 Country Codes from Kaggle: https://www.kaggle.com/datasets/andradaolteanu/iso-country-codes-global
 
 Indicators considered
