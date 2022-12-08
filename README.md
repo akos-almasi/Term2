@@ -18,10 +18,28 @@ Gender Ratio from Kaggle: https://www.kaggle.com/datasets/programmerrdai/gender-
 
 Country Codes from Kaggle: https://www.kaggle.com/datasets/andradaolteanu/iso-country-codes-global
 
-Indicators considered
+Indicators considered:
 - Pay Gap in unadjusted form
 - GDP per capita
 - Gender ratio
+
+### Data collection ###
+#### Eurostat ####
+- Gender pay gap
+The first dataset that was used in the project contains information on the gender pay gap for 30(?) European countries for 2011-2020. The original data has 7 variables: year, country, unit, field, flag, and ID. For this source we used NoSQL, and the csv file was imported to the platform by MongoDB Shell.    
+[screenshot]
+
+- GDP at Market Prices
+
+To look into the relationship between gender pay gap and GDP, Eurostat API was used to access GDP at market prices for 30? European countries. The json data was acquired using data code (nama_10_gdp) in Eurostat Query Builder and filtered for year 2020, GDP at Market prices, and countries.  The data was then extracted using Postman.
+[screenshot]
+#### Kaggle ####
+- Gender ratio
+Further, we added the Gender ratio table in order to investigate whether the connection with the Pay Gap table is present. The original dataset has information on 35 countries for 2020. 
+
+- Country Codes
+We obtained the Alpha-2 country codes from Kaggle in order to access the GDP data via postman. The csv file was then loaded to MySQL for further analysis in Knime.
+
 
 ### Knime Workflow ###
 #### MongoDB ####
