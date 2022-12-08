@@ -30,7 +30,7 @@ Indicators considered:
 - GDP per capita
 - Gender ratio
 
-<img src="https://github.com/akos-almasi/Term2/blob/main/pics/eer.png" width="600" height="500">
+<img src="https://github.com/akos-almasi/Term2/blob/main/pics/upd_eer.png" width="600" height="500">
 
 
 ### Data collection ###
