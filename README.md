@@ -54,16 +54,15 @@ We obtained the Alpha-2 country codes from Kaggle in order to access the GDP dat
 
 ![Knime Workflow](https://github.com/akos-almasi/Term2/blob/main/pics/knime.png)
 
-You can check each element of the workflow in [here](https://github.com/akos-almasi/Term2/tree/main/pics).
 ### MongoDB ###
 In order to access NoSQL we added MongoDB Connector and to be able to read the pay gap table we added MongoDB Reader node. We then transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping only necessary columns, deleting missing values, etc.
 You can check the mongoDB workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/pay_gap.png).
 ### SQL ###
-We used mysql workbench to access the gender ratio and the country codes csv files, and we used the mysql connector node to import it to knime, and we configured the Query Reader for 2020.  
+We used mysql workbench to access the gender ratio and the country codes csv files, and we used the mysql connector node to import it to knime, and we configured the Query Reader for 2020. You can check the SQL workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/ratio_codes.png)
 ### Joiner ###
 Using the joiner node, we first inner joined the gender gap and gender ratio tables by country. Then, we used the second joiner to combine the obtained table with the country codes dataset by country.
 ### Eurostat API ###
-We configured the string manipulation node to access the GDP dataset, pasted the country codes to acquire GDP information for each country. We then used the get request node to access the JSON URL for each country.  We used the JSON Path node to extract the GDP at market prices, country names, country codes, year, and unit. We then performed data cleaning by removing unnecessary columns.
+We configured the string manipulation node to access the GDP dataset, pasted the country codes to acquire GDP information for each country. We then used the get request node to access the JSON URL for each country.  We used the JSON Path node to extract the GDP at market prices, country names, country codes, year, and unit. We then performed data cleaning by removing unnecessary columns. You can check the API workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/gdp_api.png)
 
 ### Analytics on mongoDB ###
 We wanted to visualize the average pay gap in each country, so we grouped by the country column. Based on the bar chart we can see that the highest gap is in Latvia (21.3%), and the lowest is in Romania(4.7%) . 
