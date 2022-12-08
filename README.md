@@ -39,7 +39,7 @@ To look into the relationship between gender pay gap and GDP, Eurostat API was u
 #### Kaggle ####
 - Gender ratio
 
-Further, we added the Gender ratio table in order to investigate whether the connection with the Pay Gap table is present. The original dataset has information on 35 countries for 2020. 
+We added the Gender ratio table in order to investigate whether the connection with the Pay Gap table is present. The original dataset has information on 35 countries for 2020. 
 
 - Country Codes
 
