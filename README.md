@@ -35,7 +35,7 @@ Indicators considered:
 - Gender pay gap
 
 The first dataset that was used in the project contains information on the gender pay gap for European countries between 2011-2020. The original data has 7 variables: year, country, unit, field, flag, and ID. For this source we used NoSQL, and the csv file was imported to the platform by MongoDB Shell.    
-[screenshot]
+![MongoDB shell](https://github.com/akos-almasi/Term2/blob/main/pics/mongodb_bash.png)
 
 - GDP at Market Prices
 
