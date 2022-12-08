@@ -81,7 +81,9 @@ Since we found a significant relationship between gender ratio and pay gap, we w
 
 Views:
 Additionally, we created two table views that demonstrate the average pay gap and gender ratio by countries and by different fields. The user can specify the country displayed, the order of the observations based on the two indicators.
-[TWO VIEWS]
+![View-country](https://github.com/akos-almasi/Term2/blob/main/pics/view_country.png)
+
+![View-field](https://github.com/akos-almasi/Term2/blob/main/pics/view_field.png)
 
 ### Conclusion ###
 
