@@ -40,7 +40,8 @@ The first dataset that was used in the project contains information on the gende
 - GDP at Market Prices
 
 To look into the relationship between gender pay gap and GDP, Eurostat API was used to access GDP at market prices for European countries. The json data was acquired using data code (nama_10_gdp) in Eurostat Query Builder and filtered for year 2020, GDP at Market prices, and countries.  The data was then extracted using Postman.
-![postman](https://github.com/akos-almasi/Term2/blob/main/pics/Postman.png | width= 100)
+
+<img src="[https://your-image-url.type](https://github.com/akos-almasi/Term2/blob/main/pics/Postman.png)" width="100" height="100">
 
 #### Kaggle ####
 - Gender ratio
