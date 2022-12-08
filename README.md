@@ -7,7 +7,9 @@
 
 ### Abstract ###
 This report is part of the second term project for Data Engineering 1: Different Shapes of Data course at the Central European University. The task required us to select a dataset of our choice, merge it with one or more additional datasets, and then conduct a thorough analysis of the resulting dataset to find hidden correlations and patterns. To answer our analytical questions and visualize our results, we were instructed to use the tools we used in class such as SQL, API, and KNIME.
+
 To continue with our analysis, we built an ETL data pipeline with Knime using the data extracted from MongoDB, MySQL, and Eurostat API. The main indicators in our data are Gender Pay Gap, GDP per Capita, and Gender Ratio for European countries. We chose the year 2020 since the data for the selected countries is readily available on all data sources.
+
 The analysis results demonstrate that, with the exception of construction, the pay gap is positive in all other industries, with the finance and insurance sector having the largest gap. Furthermore, after running linear regression and visualizing the data to investigate the relationship between pay gap and gender ratio, we discover that countries with a higher female to male ratio have a larger pay gap.
 
 
