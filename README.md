@@ -95,9 +95,12 @@ Since we found a significant relationship between gender ratio and pay gap, we w
 
 ### Views: ###
 Additionally, we created two table views that demonstrate the average pay gap and gender ratio by countries and by different fields. The user can specify the country displayed, the order of the observations based on the two indicators.
-![View-country](https://github.com/akos-almasi/Term2/blob/main/pics/view_country.png)
 
-![View-field](https://github.com/akos-almasi/Term2/blob/main/pics/view_field.png)
+<img src="https://github.com/akos-almasi/Term2/blob/main/pics/view_country.png" width="900" height="200">
+
+<img src="https://github.com/akos-almasi/Term2/blob/main/pics/view_field" width="900" height="200">
+
+
 ### Conclusion ###
 
 First, as we have seen from the visualizations for the Pay Gap table, in the fields where there are not that many women involved the gender pay gap can be even negative indicating that females in these professions earn more than men. However, in all other fields the pay gap is positive and this gap is the highest in the financial sector. Furthermore, in order to prove our finding we ran linear regression on pay gap conditioned on gender ratio and log(GDP) and constructed a box plot. The previously observed pattern is also found in the obtained results, the gender ration and pay gap are indeed positively correlated. 
