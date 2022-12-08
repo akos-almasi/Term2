@@ -54,7 +54,7 @@ We obtained the Alpha-2 country codes from Kaggle in order to access the GDP dat
 
 ![Knime Workflow](https://github.com/akos-almasi/Term2/blob/main/pics/knime.png)
 
-You can check each element in [here](https://github.com/akos-almasi/Term2/tree/main/pics).
+You can check each element of the workflow in [here](https://github.com/akos-almasi/Term2/tree/main/pics).
 ### MongoDB ###
 In order to access NoSQL we added MongoDB Connector and to be able to read the pay gap table we added MongoDB Reader node. We then transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping only necessary columns, deleting missing values, etc. 
 ### SQL ###
