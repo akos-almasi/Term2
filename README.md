@@ -87,7 +87,6 @@ We included the summary statistics table for the Data Warehouse:
 
 We took the log GDP for the following models:
 First we ran a linear regression on pay gap conditioned on gender ratio and log GDP. We found out that if the female to male gender ratio increases by 1% the pay gap also increases by 1.2 %. Ln GDP is not significant probably because we are checking EU countries. Our adjusted R-squared value is low, so we would advise to add additional explanatory variable(s) to the model. 
-INCLUDE REGRESSION EXPLANATION GRAPH, VIz
 
 Since we found a significant relationship between gender ratio and pay gap, we wanted to visualize this correlation using a box plot. The plot confirms the regression result, the mean pay gap has an increasing trend meaning that as the proportion of women in the country rises the difference between average wage of men and women becomes bigger.  
 
