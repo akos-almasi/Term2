@@ -6,7 +6,7 @@
 
 
 ### Abstract ###
-This report is part of the second term project for Data Engineering 1: Different Shapes of Data course at the Central European University. The task required us to select a dataset of our choice, merge it with one or more additional datasets, and then conduct a thorough analysis of the resulting dataset to find hidden correlations and patterns. To answer our analytical questions and visualize our results, we were instructed to use the tools we used in class such as SQL, API, and KNIME.
+This report is part of the second term project for Data Engineering 1: Different Shapes of Data course at the Central European University. The task required us to select a dataset of our choice, merge it with one or more additional datasets, and then conduct a thorough analysis of the resulting dataset to find hidden correlations and patterns. To answer our analytical questions and visualize the results, we were instructed to use the tools we used in class such as SQL, API, and KNIME.
 
 To continue with our analysis, we built an ETL data pipeline with Knime using the data extracted from MongoDB, MySQL, and Eurostat API. The main indicators in our data are Gender Pay Gap, GDP per Capita, and Gender Ratio for European countries. We chose the year 2020 since the data for the selected countries is readily available on all data sources.
 
@@ -59,10 +59,10 @@ We obtained the Alpha-2 country codes from Kaggle in order to access the GDP dat
 ![Knime Workflow](https://github.com/akos-almasi/Term2/blob/main/pics/knime.png)
 
 ### MongoDB ###
-In order to access NoSQL we added MongoDB Connector and to be able to read the pay gap table we added MongoDB Reader node. We then transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping only necessary columns, deleting missing values, etc.
-You can check the mongoDB workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/pay_gap.png).
+In order to access NoSQL we added MongoDB Connector and then we applied MongoDB Reader node to be able to read the pay gap table. For the next step we transformed the obtained JSON to a Table and filtered the data to our needs, such as: leaving only 2020, keeping only necessary columns, deleting missing values, etc.
+You can check the MongoDB workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/pay_gap.png).
 ### SQL ###
-We used mysql workbench to access the gender ratio and the country codes csv files, and we used the mysql connector node to import it to knime, and we configured the Query Reader for 2020. You can check the SQL workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/ratio_codes.png)
+We used MySQL workbench to access the gender ratio and the country codes csv files, and we used the MySQL connector node to import it to Knime, and we configured the Query Reader for 2020. You can check the SQL workflow [here](https://github.com/akos-almasi/Term2/blob/main/pics/ratio_codes.png)
 ### Joiner ###
 Using the joiner node, we first inner joined the gender gap and gender ratio tables by country. Then, we used the second joiner to combine the obtained table with the country codes dataset by country.
 ### Eurostat API ###
@@ -87,7 +87,7 @@ Since we found a significant relationship between gender ratio and pay gap, we w
 <img src="https://github.com/akos-almasi/Term2/blob/main/pics/box_plot.png" width="800" height="500">
 
 
-Views:
+#### Views: ####
 Additionally, we created two table views that demonstrate the average pay gap and gender ratio by countries and by different fields. The user can specify the country displayed, the order of the observations based on the two indicators.
 ![View-country](https://github.com/akos-almasi/Term2/blob/main/pics/view_country.png)
 
