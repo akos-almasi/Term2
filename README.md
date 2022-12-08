@@ -1,6 +1,12 @@
-!
+# Term Project DE2
 
 
-[Country](https://user-images.githubusercontent.com/113236007/206415339-2781568e-b9ca-45f6-8dcc-759f12a0fadf.png)
+
+
+
+
+<img width="848" alt="Screenshot 2022-12-08 at 10 50 50" src="https://user-images.githubusercontent.com/113236007/206415570-bdbdeb3a-801d-4f10-b075-3c4571e25ecf.png">
+
+
 
 
