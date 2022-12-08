@@ -82,7 +82,7 @@ INCLUDE REGRESSION EXPLANATION GRAPH, VIz
 
 Since we found a significant relationship between gender ratio and pay gap, we wanted to visualize this correlation using a box plot. The plot confirms the regression result, the mean pay gap has an increasing trend meaning that as the proportion of women in the country rises the difference between average wage of men and women becomes bigger.  
 
-img src="https://github.com/akos-almasi/Term2/blob/main/pics/box_plot.png" width="800" height="500">
+<img src="https://github.com/akos-almasi/Term2/blob/main/pics/box_plot.png" width="800" height="500">
 
 
 Views:
