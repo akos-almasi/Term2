@@ -26,6 +26,7 @@ Indicators considered:
 ### Data collection ###
 #### Eurostat ####
 - Gender pay gap
+
 The first dataset that was used in the project contains information on the gender pay gap for 30(?) European countries for 2011-2020. The original data has 7 variables: year, country, unit, field, flag, and ID. For this source we used NoSQL, and the csv file was imported to the platform by MongoDB Shell.    
 [screenshot]
 
@@ -35,9 +36,11 @@ To look into the relationship between gender pay gap and GDP, Eurostat API was u
 [screenshot]
 #### Kaggle ####
 - Gender ratio
+
 Further, we added the Gender ratio table in order to investigate whether the connection with the Pay Gap table is present. The original dataset has information on 35 countries for 2020. 
 
 - Country Codes
+
 We obtained the Alpha-2 country codes from Kaggle in order to access the GDP data via postman. The csv file was then loaded to MySQL for further analysis in Knime.
 
 
