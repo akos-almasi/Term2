@@ -29,6 +29,14 @@ Using the joiner node, we first inner joined the gender gap and gender ratio tab
 #### Eurostat API ####
 We configured the string manipulation node to access the GDP dataset, pasted the country codes to acquire GDP information for each country. We then used the get request node to access the JSON URL for each country.  We used the JSON Path node to extract the GDP at market prices, country names, country codes, year, and unit. We then performed data cleaning by removing unnecessary columns.
 
+### Analytics on mongoDB ###
+We wanted to visualize the average pay gap in each country, so we grouped by the country names column. Based on the bar chart we can see that the highest gap is in Latvia (21.3%), and the lowest is in Romania(4.7%) . 
+Then we wanted to investigate this further so we checked what is the mean gap in each field. The result shows us that there is a negative pay gap in construction, which means women tend to earn more in this field, probably it's because there aren't many women in this occupation or most of the time they are in higher average salary positions compared to men who work on construction sites.
+
+### Analytics on the Data Warehouse ###
+We included the summary statistics table for the Data Warehouse
+
+
 
 
 
